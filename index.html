@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link type="text/css"href="style.css"rel="stylesheet">
+		<title>Welcome| Do Di Maths</title>
+	</head>
+	
+	<body id="bodyBG" background="background.jpg">
+		<header>
+			<nav>
+				<div id="homeLinks">
+					<a href="index.html">Home <img src="home.jpg" height="30" width="40"></a>
+					<a href="math.html"> Take Quiz</a>
+				</div>
+			</nav>
+			
+			<div id="div1">
+				<p id="Name"><img src="math.png" id="logo"><b>For 9 TO 12 year olds!</b></p>
+			</div>
+		</header>
+			
+		<section>
+			<div id="div2">
+				<b><form id="RegistrationSheet" style="width:100%">
+					<fieldset style="width:90%">
+						<legend><p id="p">Complete the form below:</p></legend>
+							<label>First Name:</label>
+								   <input type="text" id="Fname" placeholder="First name" required minlength="3"><br><br> 					
+							<label>Middle Name(s):</label>
+								   <input type="text" id="Mname" placeholder="Middle name" required minlength="3"><br><br> 
+							<label>Last Name:</label>
+								   <input type="text" id="Lname" placeholder="Last name" required minlength="3"><br><br>
+							<label>Gender:</label><br> 
+							       <input type="radio" id="Female" name="gender">Female <input type="radio" id="Male" name="gender">Male <input type="radio" id="Do not wish to specify" name="gender">Do not wish to specify<br><br><br>
+							<label>Date of Birth</label>
+                                   <input type="date" name="dob" id="dob" onclick="calculateAge(event)" required><br><br>
+                            <!--label>Age: </label>
+                                   <input type="number" read only required name="age" placeholder="Age" id="age"><br><br-->
+							<label>Choose your profile image</label>
+							       <input type="file" accept=".jpg, .png" id="image" name="file" onchange="readURL(this)"><br><br><br>  
+							<div>
+								<button type="submit" onclick="registerUser()">Register</button>
+							</div>
+							<!--Date of birth: <input type="date" id="dob" placeholder="birth year" required min="01/01/2006" max="12/31/2009"><br><br>
+								<button onclick="calculateAge()">
+									calculate Age			
+								</button>					  
+							<!--<br><input type="Submit" id="submit" value="Sign Up"><br><br><br>-->
+					</fieldset>
+				</form></b>
+			</div>
+		</section>
+		<script src="style.js"></script>
+		<div style='text-align: center;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;display:block !important;'><a title="Hosted on free web hosting 000webhost.com. Host your own website for FREE." target="_blank" href="https://www.000webhost.com/?utm_source=000webhostapp&amp;utm_campaign=000_logo&amp;utm_medium=website_mathspactice&amp;utm_content=footer_img"><img src="https://cdn.rawgit.com/000webhost/logo/e9bd13f7/footer-powered-by-000webhost-white2.png"  alt="www.000webhost.com"></a></div></body>
+
+	</body>
+
+</html>
